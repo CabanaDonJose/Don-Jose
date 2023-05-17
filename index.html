@@ -4,136 +4,91 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cabañas Don José - Página de Promoción</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <title>Cabañas Don José</title>
   <style>
-    /* Estilos CSS para la página */
     body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #bbd5be; /* Color de fondo */
-    }
-    
-    /* Resto de los estilos CSS */
-    header {
-      background-color: #eaeaea;
-      padding: 20px;
-      text-align: center;
-    }
-    
-    h1 {
-      color: #333;
-      font-size: 36px;
-      margin: 0;
-    }
-    
-    main {
-      padding: 20px;
-      max-width: 800px;
+      max-width: 1200px;
       margin: 0 auto;
+      padding: 20px;
+      font-family: Arial, sans-serif;
     }
-    
-    h2 {
-      color: #333;
-      font-size: 24px;
+
+    header {
+      text-align: center;
       margin-bottom: 20px;
     }
-    
-    p {
-      color: #666;
-      line-height: 1.6;
+
+    main {
+      margin-bottom: 40px;
     }
-    
-    ul {
-      list-style-type: disc;
-      margin-left: 20px;
-      color: #666;
-    }
-    
-    li {
+
+    h2 {
       margin-bottom: 10px;
     }
-    
-    a {
-      color: #333;
-      text-decoration: none;
+
+    ul {
+      padding-left: 20px;
     }
-    
-    a:hover {
-      text-decoration: underline;
-    }
-    
+
     .gallery {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-gap: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 20px;
     }
-    
+
+    .gallery a {
+      flex: 0 0 calc(33.333% - 10px);
+    }
+
     .gallery img {
       width: 100%;
       height: auto;
-      border-radius: 5px;
     }
-    
-    .button {
-      display: inline-block;
-      padding: 10px 20px;
-      background-color: #333;
-      color: #fff;
-      border-radius: 5px;
-      text-decoration: none;
-    }
-    
-    .button:hover {
-      background-color: #555;
-    }
-    
+
     .social-icons {
       margin-top: 20px;
-      text-align: center;
     }
-    
+
     .social-icons a {
       display: inline-block;
-      margin: 0 10px;
       width: 30px;
       height: 30px;
-      background-color: #333;
+      margin-right: 10px;
       color: #fff;
-      border-radius: 50%;
+      background-color: #333;
       text-align: center;
       line-height: 30px;
+      border-radius: 50%;
       text-decoration: none;
     }
-    
-    .content-wrapper {
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
-      margin-top: 20px;
-    }
-    
-    .main-content {
-      flex: 1;
-      margin-right: 20px;
-    }
-    
+
     .map-container {
-      flex: 1;
+      width: 100%;
+      max-width: 600px;
+      margin-left: 0;
+      margin-right: auto;
     }
-    
+
     .map-container iframe {
       width: 100%;
-      height: 450px;
-      border: 0;
-      border-radius: 5px;
+      height: 400px;
     }
-    
+
+    .content-wrapper {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .main-content {
+      flex: 0 0 65%;
+    }
+
     footer {
       text-align: center;
-      padding: 20px;
-      background-color: #eaeaea;
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid #ccc;
     }
   </style>
 </head>
@@ -156,48 +111,39 @@
 
     <h3>Galería</h3>
     <div class="gallery">
-      <a href="https://github.com/CabanaDonJose/fotos/blob/main/20170725_161259.jpg?raw=true" target="_blank"><img src="https://github.com/CabanaDonJose/fotos/blob/main/20170725_161259.jpg?raw=true" alt="Imagen 1"></a>
-      <a href="https://github.com/CabanaDonJose/fotos/blob/main/IMG-20170814-WA0029.jpg?raw=true" target="_blank"><img src="https://github.com/CabanaDonJose/fotos/blob/main/IMG-20170814-WA0029.jpg?raw=true" alt="Imagen 2"></a>
-      <a href="https://github.com/CabanaDonJose/fotos/blob/main/IMG-20171125-WA0014.jpg?raw=true" target="_blank"><img src="https://github.com/CabanaDonJose/fotos/blob/main/IMG-20171125-WA0014.jpg?raw=true" alt="Imagen 3"></a>
-      <a href="https://github.com/CabanaDonJose/fotos/blob/main/IMG-20200119-WA0020.jpg?raw=true" target="_blank"><img src="https://github.com/CabanaDonJose/fotos/blob/main/IMG-20200119-WA0020.jpg?raw=true" alt="Imagen 4"></a>
-      <a href="https://github.com/CabanaDonJose/fotos/blob/main/IMG-20200119-WA0052.jpg?raw=true" target="_blank"><img src="https://github.com/CabanaDonJose/fotos/blob/main/IMG-20200119-WA0052.jpg?raw=true" alt="Imagen 5"></a>
-      <a href="https://github.com/CabanaDonJose/fotos/blob/main/IMG-20180705-WA0026.jpg?raw=true" target="_blank"><img src="https://github.com/CabanaDonJose/fotos/blob/main/IMG-20180705-WA0026.jpg?raw=true" alt="Imagen 6"></a>
-      <a href="https://github.com/CabanaDonJose/fotos/blob/main/IMG-20190717-WA0006.jpg?raw=true" target="_blank"><img src="https://github.com/CabanaDonJose/fotos/blob/main/IMG-20190717-WA0006.jpg?raw=true" alt="Imagen 7"></a>
-      <a href="https://github.com/CabanaDonJose/fotos/blob/main/IMG-20190927-WA0023.jpg?raw=true" target="_blank"><img src="https://github.com/CabanaDonJose/fotos/blob/main/IMG-20190927-WA0023.jpg?raw=true" alt="Imagen 8"></a>
-      <a href="https://github.com/CabanaDonJose/fotos/blob/main/IMG-20200119-WA0013.jpg?raw=true" target="_blank"><img src="https://github.com/CabanaDonJose/fotos/blob/main/IMG-20200119-WA0013.jpg?raw=true" alt="Imagen 9"></a>
-      <a href="https://github.com/CabanaDonJose/fotos/blob/main/IMG-20171202-WA0000.jpg?raw=true" target="_blank"><img src="https://github.com/CabanaDonJose/fotos/blob/main/IMG-20171202-WA0000.jpg?raw=true" alt="Imagen 10"></a>
-      <a href="https://github.com/CabanaDonJose/fotos/blob/main/IMG-20190527-WA0044.jpg?raw=true" target="_blank"><img src="https://github.com/CabanaDonJose/fotos/blob/main/IMG-20190527-WA0044.jpg?raw=true" alt="Imagen 11"></a>
+      <!-- Imágenes de la galería -->
     </div>
 
-    <h3>Contacto</h3>
-    <p>Podes comunicarte con nosotros a través de los siguientes medios:</p>
-    <ul>
-      <li>Teléfono: <a href="tel:+123456789">1169761375</a></li>
-      <li>Email: <a href="mailto:info@minegocio.com">cabanadonjose.esquina@gmail.com</a></li>
-    </ul>
+    <div class="content-wrapper">
+      <main class="main-content">
+        <h2>Ubicación</h2>
+        <p>Aquí podes encontrarnos:</p>
+        <p>Dirección: RN12 km 677, W3193 Esquina, Corrientes</p>
+      </main>
 
-    <div class="social-icons">
-      <a href="https://www.facebook.com/cabanadonjose.esquina/" class="fab fa-facebook-f"></a>
-      <a href="https://www.instagram.com/cabanadonjoseesquina/" class="fab fa-instagram"></a>
+      <div class="contact-info">
+        <h3>Contacto</h3>
+        <p>Podes comunicarte con nosotros a través de los siguientes medios:</p>
+        <ul>
+          <li>Teléfono: <a href="tel:+123456789">1169761375</a></li>
+          <li>Email: <a href="mailto:info@minegocio.com">cabanadonjose.esquina@gmail.com</a></li>
+        </ul>
+
+        <div class="social-icons">
+          <a href="https://www.facebook.com/cabanadonjose.esquina/" class="fab fa-facebook-f"></a>
+          <a href="https://www.instagram.com/cabanadonjoseesquina/" class="fab fa-instagram"></a>
+        </div>
+      </div>
     </div>
-  </main>
-
-  <div class="content-wrapper">
-    <main class="main-content">
-      <!-- Contenido de la página -->
-      <h2>Ubicación</h2>
-      <p>Aquí podes encontrarnos:</p>
-      <p>Dirección: RN12 km 677, W3193 Esquina, Corrientes</p>
-    </main>
 
     <div class="map-container">
-      <!-- Pegar el código del mapa aquí -->
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3452.2522485690315!2d-59.536950584883954!3d-30.086961281866817!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x944c8d292edcde41%3A0xf91e18136fa743dd!2zQ2FiYcOxYSBEb24gSm9zw6k!5e0!3m2!1ses!2sar!4v1684355974488!5m2!1ses!2sar" width="985" height="400" frameborder="0" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3452.2522485690315!2d-59.536950584883954!3d-30.086961281866817!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x944c8d292edcde41%3A0xf91e18136fa743dd!2zQ2FiYcOxYSBEb24gSm9zw6k!5e0!3m2!1ses!2sar!4v1684355974488!5m2!1ses!2sar" width="100%" height="400" frameborder="0" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
-  </div>
+  </main>
 
   <footer>
     &copy; 2023 Cabañas Don José. Todos los derechos reservados.
   </footer>
 </body>
+
 </html>
