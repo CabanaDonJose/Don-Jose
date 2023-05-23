@@ -60,13 +60,13 @@
     <div id="inicio">
       <h1>Cabañas Don José</h1>
       <p>Bienvenido a Cabañas Don José, tu lugar de descanso en Esquina, Corrientes.</p>
-      <a href="#galeria" onclick="toggleGallery()">Ver galería</a>
+      <a href="#galeria" onclick="toggleGallery('<a href="https://github.com/CabanaDonJose/fotos/blob/main/20170725_161259.jpg?raw=true" target="_blank"><img src="https://github.com/CabanaDonJose/fotos/blob/main/20170725_161259.jpg?raw=true" alt="Imagen 1"></a>')">Ver galería</a>
     </div>
 
     <div id="galeria" class="modal">
       <span class="close" onclick="toggleGallery()">&times;</span>
       <div class="modal-content">
-        <img class="modal-img" src="img/photo1.jpg" alt="Foto 1">
+        <img id="gallery-image" class="modal-img" src="" alt="Foto">
       </div>
     </div>
 
@@ -115,11 +115,15 @@
       });
     }
 
-    function toggleGallery() {
+    function toggleGallery(imageSrc) {
       var gallery = document.getElementById("galeria");
+      var galleryImage = document.getElementById("gallery-image");
+
       if (gallery.style.display === "none") {
+        galleryImage.src = imageSrc;
         gallery.style.display = "flex";
       } else {
+        galleryImage.src = "";
         gallery.style.display = "none";
       }
     }
