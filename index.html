@@ -5,56 +5,62 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cabañas Don José</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
-
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/1234567890.js" crossorigin="anonymous"></script>
   <style>
-    /* Estilos CSS para la página */
+    /* Estilos CSS */
     body {
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #bbd5be; /* Color de fondo */
     }
 
-    /* Resto de los estilos CSS */
     header {
-      background-color: #eaeaea;
+      background-color: #333;
+      color: #fff;
       padding: 20px;
       text-align: center;
     }
 
+    nav a {
+      color: #fff;
+      margin-right: 10px;
+      text-decoration: none;
+    }
+
+    .content-wrapper {
+      display: flex;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .main-content {
+      flex: 2;
+    }
+
+    .sidebar {
+      flex: 1;
+    }
+
     h1 {
-      font-size: 28px;
-      color: #333;
+      margin-top: 0;
     }
 
     h2 {
-      font-size: 24px;
-      margin-bottom: 10px;
-    }
-
-    h3 {
-      font-size: 20px;
-      margin-bottom: 10px;
-    }
-
-    p {
-      line-height: 1.5;
-    }
-
-    ul {
-      padding-left: 20px;
+      margin-top: 30px;
     }
 
     .gallery {
       display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-bottom: 20px;
+      justify-content: space-between;
+      margin-bottom: 30px;
     }
 
     .gallery a {
-      flex: 0 0 calc(33.333% - 10px);
+      flex: 1;
+      margin-right: 10px;
+      display: block;
     }
 
     .gallery img {
@@ -62,78 +68,25 @@
       height: auto;
     }
 
-    .social-icons {
-      margin-top: 20px;
-    }
-
-    .social-icons a {
-      display: inline-block;
-      width: 30px;
-      height: 30px;
-      margin-right: 10px;
-      color: #fff;
-      background-color: #333;
-      text-align: center;
-      line-height: 30px;
-      border-radius: 50%;
-      text-decoration: none;
-    }
-
-    .map-container {
-      width: 100%;
-      max-width: 600px;
-      margin-left: auto;
-      margin-right: 0;
-      margin-top: 20px;
-    }
-
-    .map-container iframe {
-      width: 100%;
-      height: 400px;
-    }
-
-    .content-wrapper {
-      display: flex;
-      flex-wrap: wrap;
-    }
-
-    .main-content {
-      flex: 0 0 65%;
-    }
-
-    .contact-info {
-      background-color: #f4f4f4;
-      padding: 10px;
-      border-radius: 5px;
-      box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-      height: 150px; /* Ajusta la altura según tus necesidades */
-      overflow: auto; /* Añade una barra de desplazamiento si el contenido excede la altura */
-    }
-
-    .contact-info h3 {
-      font-size: 16px;
-      margin: 0 0 10px;
+    ul {
+      padding-left: 20px;
     }
 
     .contact-info ul {
-      margin: 0;
+      list-style: none;
       padding: 0;
-      list-style-type: none;
     }
 
     .contact-info li {
-      margin-bottom: 5px;
+      margin-bottom: 10px;
     }
 
-    .contact-info a {
-      color: #333;
-      text-decoration: none;
+    .contact-info i {
+      margin-right: 5px;
     }
 
     .social-icons a {
       display: inline-block;
-      width: 25px;
-      height: 25px;
       margin-right: 5px;
       color: #fff;
       background-color: #333;
@@ -141,6 +94,11 @@
       line-height: 25px;
       border-radius: 50%;
       text-decoration: none;
+    }
+
+    #map {
+      height: 400px;
+      margin-bottom: 30px;
     }
 
     @media screen and (max-width: 768px) {
@@ -172,46 +130,69 @@
     <div class="main-content">
       <h2>Nuestras cabañas</h2>
       <div class="gallery" id="galeria">
-        <a href="images/cabana1.jpg">
-          <img src="images/cabana1.jpg" alt="Cabaña 1">
-        </a>
-        <a href="images/cabana2.jpg">
-          <img src="images/cabana2.jpg" alt="Cabaña 2">
-        </a>
-        <a href="images/cabana3.jpg">
-          <img src="images/cabana3.jpg" alt="Cabaña 3">
+        <div class="content-wrapper">
+      <div class="main-content">
+        <div class="gallery">
+          <a href="https://github.com/CabanaDonJose/fotos/blob/main/20170725_161259.jpg?raw=true" target="_blank"><img src="https://github.com/CabanaDonJose/fotos/blob/main/20170725_161259.jpg?raw=true" alt="Imagen 1"></a>
+          <a href="https://github.com/CabanaDonJose/fotos/blob/main/IMG-20170814-WA0029.jpg?raw=true" target="_blank"><img src="https://github.com/CabanaDonJose/fotos/blob/main/IMG-20170814-WA0029.jpg?raw=true" alt="Imagen 2"></a>
+          <a href="https://github.com/CabanaDonJose/fotos/blob/main/IMG-20171125-WA0014.jpg?raw=true" target="_blank"><img src="https://github.com/CabanaDonJose/fotos/blob/main/IMG-20171125-WA0014.jpg?raw=true" alt="Imagen 3"></a>
+          <a href="https://github.com/CabanaDonJose/fotos/blob/main/IMG-20200119-WA0020.jpg?raw=true" target="_blank"><img src="https://github.com/CabanaDonJose/fotos/blob/main/IMG-20200119-WA0020.jpg?raw=true" alt="Imagen 4"></a>
+          <a href="https://github.com/CabanaDonJose/fotos/blob/main/IMG-20200119-WA0052.jpg?raw=true" target="_blank"><img src="https://github.com/CabanaDonJose/fotos/blob/main/IMG-20200119-WA0052.jpg?raw=true" alt="Imagen 5"></a>
+          <a href="https://github.com/CabanaDonJose/fotos/blob/main/IMG-20180705-WA0026.jpg?raw=true" target="_blank"><img src="https://github.com/CabanaDonJose/fotos/blob/main/IMG-20180705-WA0026.jpg?raw=true" alt="Imagen 6"></a>
+          <a href="https://github.com/CabanaDonJose/fotos/blob/main/IMG-20190717-WA0006.jpg?raw=true" target="_blank"><img src="https://github.com/CabanaDonJose/fotos/blob/main/IMG-20190717-WA0006.jpg?raw=true" alt="Imagen 7"></a>
+          <a href="https://github.com/CabanaDonJose/fotos/blob/main/IMG-20190927-WA0023.jpg?raw=true" target="_blank"><img src="https://github.com/CabanaDonJose/fotos/blob/main/IMG-20190927-WA0023.jpg?raw=true" alt="Imagen 8"></a>
+          <a href="https://github.com/CabanaDonJose/fotos/blob/main/IMG-20200119-WA0013.jpg?raw=true" target="_blank"><img src="https://github.com/CabanaDonJose/fotos/blob/main/IMG-20200119-WA0013.jpg?raw=true" alt="Imagen 9"></a>
+          <a href="https://github.com/CabanaDonJose/fotos/blob/main/IMG-20171202-WA0000.jpg?raw=true" target="_blank"><img src="https://github.com/CabanaDonJose/fotos/blob/main/IMG-20171202-WA0000.jpg?raw=true" alt="Imagen 10"></a>
+          <a href="https://github.com/CabanaDonJose/fotos/blob/main/IMG-20190527-WA0044.jpg?raw=true" target="_blank"><img src="https://github.com/CabanaDonJose/fotos/blob/main/IMG-20190527-WA0044.jpg?raw=true" alt="Imagen 11"></a>
+        </div>
         </a>
       </div>
-
-      <h2>Actividades</h2>
-      <ul>
-        <li>Paseos en bote por el río Paraná</li>
-        <li>Pesca deportiva</li>
-        <li>Senderismo en la reserva natural</li>
-      </ul>
+      <h2>Información de contacto</h2>
+      <div id="contacto">
+        <div class="contact-info">
+          <ul>
+            <li><i class="fas fa-map-marker-alt"></i> Dirección: RN12 km 677, W3193 Esquina, Corrientes</li>
+            <li><i class="fas fa-phone"></i> Teléfono: +541130300402</li>
+            <li><i class="fas fa-envelope"></i> Correo electrónico: cabanadonjose.esquina@gmail.com</li>
+          </ul>
+        </div>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/cabanadonjose.esquina" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/cabanadonjoseesquina/" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <div id="map"></div>
     </div>
 
     <div class="sidebar">
-      <div class="contact-info" id="contacto">
-        <h3>Contacto</h3>
-        <ul>
-          <li><i class="fas fa-map-marker-alt"></i> Dirección: Av. Rivadavia 123, Corrientes, Argentina</li>
-          <li><i class="fas fa-phone-alt"></i> Teléfono: <a href="tel:+54123456789">+54 1234 56789</a></li>
-          <li><i class="fas fa-envelope"></i> Email: <a href="mailto:info@cabanadonjose.com">info@cabanadonjose.com</a></li>
-        </ul>
-        <div class="social-icons">
-          <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
-          <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
-          <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
-        </div>
-      </div>
+      <h2>Acerca de nosotros</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate est id varius congue. Curabitur vitae
+        libero eu tellus rutrum luctus sit amet in elit. Fusce fermentum, odio eu dignissim fringilla, odio urna
+        facilisis sapien, eget accumsan odio quam vitae metus.</p>
+      <p>Nulla tempus cursus dolor. Aliquam nec nulla ac lacus blandit interdum. Sed lacinia efficitur orci at
+        sollicitudin. Mauris convallis rhoncus tellus, eget aliquet nisi mattis vitae.</p>
     </div>
   </div>
 
-  <div class="map-container">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3543.076614067416!2d-58.83617018504198!3d-27.477473982895246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjfCsDQ2JzA2LjgiUyA1OMKwMTInMTMuMiJX!5e0!3m2!1sen!2sus!4v1554207978986!5m2!1sen!2sus" frameborder="0" style="border:0" allowfullscreen></iframe>
-  </div>
+  <footer>
+    <p>&copy; 2023 Cabañas Don José. Todos los derechos reservados.</p>
+  </footer>
 
+  <script src="https://maps.googleapis.com/maps/api/js?key=TU_API_KEY&callback=initMap" async defer></script>
+  <script>
+    function initMap() {
+      var mapOptions = {
+        center: { lat: -34.595614, lng: -58.443194 },
+        zoom: 15
+      };
+      var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+      var marker = new google.maps.Marker({
+        position: { lat: -34.595614, lng: -58.443194 },
+        map: map,
+        title: "Cabañas Don José"
+      });
+    }
+  </script>
 </body>
 
 </html>
