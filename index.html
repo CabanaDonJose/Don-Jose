@@ -10,7 +10,7 @@
   <style>
     .modal {
       display: none;
-      background-color: #f1f1f1; /* Add background color */
+      background-color: #f1f1f1;
     }
 
     .thumbnails img {
@@ -82,7 +82,7 @@
     </div>
   </div>
 
-  <script src="https://maps.googleapis.com/maps/api/js?key=https://goo.gl/maps/Y6tZKYEo2AHB357u5&callback=initMap" async defer></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
   <script>
     function initMap() {
       var mapOptions = {
@@ -99,13 +99,15 @@
       });
     }
 
-    function toggleGallery() {
+    function toggleGallery(imageSrc) {
       var gallery = document.getElementById("galeria");
       var galleryImage = document.getElementById("gallery-image");
 
       if (gallery.style.display === "none") {
-        gallery.style.display = "block";
+        galleryImage.src = imageSrc;
+        gallery.style.display = "flex";
       } else {
+        galleryImage.src = "";
         gallery.style.display = "none";
       }
     }
