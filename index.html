@@ -7,6 +7,11 @@
   <title>Cabañas Don José</title>
   <link rel="stylesheet" href="styles.css">
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+.modal {
+  display: none;
+}
+
+/* Rest of your styles */
 
   <style>
     .thumbnails img {
@@ -35,12 +40,12 @@
       <button onclick="toggleGallery()">Ver Galería</button>
     </div>
 
-    <div id="galeria" class="modal">
-      <span class="close" onclick="toggleGallery()">&times;</span>
-      <div class="modal-content">
-        <img id="gallery-image" class="modal-img" src="" alt="Foto">
-        <div class="thumbnails">
-          <a href="https://github.com/CabanaDonJose/fotos/blob/main/20170725_161259.jpg?raw=true" target="_blank"><img src="https://github.com/CabanaDonJose/fotos/blob/main/20170725_161259.jpg?raw=true" alt="Imagen 1"></a>
+    <div id="galeria" class="modal" style="display: none;">
+  <span class="close" onclick="toggleGallery()">&times;</span>
+  <div class="modal-content">
+    <img id="gallery-image" class="modal-img" src="" alt="Foto">
+    <div class="thumbnails">
+             <a href="https://github.com/CabanaDonJose/fotos/blob/main/20170725_161259.jpg?raw=true" target="_blank"><img src="https://github.com/CabanaDonJose/fotos/blob/main/20170725_161259.jpg?raw=true" alt="Imagen 1"></a>
           <a href="https://github.com/CabanaDonJose/fotos/blob/main/IMG-20170814-WA0029.jpg?raw=true" target="_blank"><img src="https://github.com/CabanaDonJose/fotos/blob/main/IMG-20170814-WA0029.jpg?raw=true" alt="Imagen 2"></a>
           <a href="https://github.com/CabanaDonJose/fotos/blob/main/IMG-20171125-WA0014.jpg?raw=true" target="_blank"><img src="https://github.com/CabanaDonJose/fotos/blob/main/IMG-20171125-WA0014.jpg?raw=true" alt="Imagen 3"></a>
           <a href="https://github.com/CabanaDonJose/fotos/blob/main/IMG-20200119-WA0020.jpg?raw=true" target="_blank"><img src="https://github.com/CabanaDonJose/fotos/blob/main/IMG-20200119-WA0020.jpg?raw=true" alt="Imagen 4"></a>
